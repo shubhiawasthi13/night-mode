@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color: white;
+    --secondary-color: black;
+}
+.dark-mode{
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+#navbar{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 70px;
+
+}
+#navbar ul{
+    display: flex;
+    justify-content: right;
+}
+#navbar ul li{
+    padding-top: 30px;
+    font-size: 20px;
+    list-style: none;
+    padding-right: 30px;
+
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+#navbar ul li a:hover{
+    color: red;
+    font-weight: bold;
+    
+}
+
+.container{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 60vh;
+}
+.container h2{
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30vh;
+    font-size: 50px;
+}
+.container p{
+    color: var(--secondary-color);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    padding-right: 15px;
+    padding-top: 25px;
+
+}
+.change-content:after{
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: rgb(57, 92, 6);
+    font-weight: bold;
+
+}
+@keyframes changetext{
+    0%{content:"python";}
+    20%{content:"php";}
+    35%{content:"javascript";}
+    60%{content:"ASP.NET";}
+    80%{content:"ruby";}
+    100%{content:"node.js";}
+}
+
